@@ -9,7 +9,24 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    var toDoItems: [String] = []
 
+    @IBAction func addTask(_ sender: UIBarButtonItem) {
+        let ac = UIAlertController(title: "Add task", message: "add new task", preferredStyle: .alert)
+        let ok = UIAlertAction(title: "Ok", style: .default) { action in
+            let textField = ac.textFields?[0]
+            self.toDoItems.insert((textField?.text)!, at: 0)
+            self.tableView.reloadData()
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        ac.addTextField { textField in
+          
+        }
+        ac.addAction(ok)
+        ac.addAction(cancel)
+        present(ac, animated:  true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,23 +41,22 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return toDoItems.count
     }
 
-    /*
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        cell.textLabel?.text = toDoItems[indexPath.row]
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
