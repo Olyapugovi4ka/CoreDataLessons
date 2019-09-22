@@ -14,6 +14,8 @@
 		352762DF1C0AEF3100A3BABA /* MyCars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 359705A71C08159E00D13FE9 /* MyCars.xcdatamodeld */; };
 		352762E01C0AEF3400A3BABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359705A01C08159E00D13FE9 /* AppDelegate.swift */; };
 		352762E11C0AEF3600A3BABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359705A21C08159E00D13FE9 /* ViewController.swift */; };
+		FA43BBDC2336229A00D69F92 /* Car+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43BBD923361A8000D69F92 /* Car+CoreDataProperties.swift */; };
+		FA43BBDD2336229D00D69F92 /* Car+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43BBD823361A8000D69F92 /* Car+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		359705AF1C08159E00D13FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		359705B91C0829ED00D13FE9 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		35F2F4DF1C084725000E1CB3 /* MyCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA43BBD823361A8000D69F92 /* Car+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FA43BBD923361A8000D69F92 /* Car+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				359705A01C08159E00D13FE9 /* AppDelegate.swift */,
+				FA43BBD923361A8000D69F92 /* Car+CoreDataProperties.swift */,
+				FA43BBD823361A8000D69F92 /* Car+CoreDataClass.swift */,
 				359705A21C08159E00D13FE9 /* ViewController.swift */,
 				359705AA1C08159E00D13FE9 /* Assets.xcassets */,
 				359705A41C08159E00D13FE9 /* Main.storyboard */,
@@ -144,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA43BBDC2336229A00D69F92 /* Car+CoreDataProperties.swift in Sources */,
 				352762E11C0AEF3600A3BABA /* ViewController.swift in Sources */,
 				352762E01C0AEF3400A3BABA /* AppDelegate.swift in Sources */,
+				FA43BBDD2336229D00D69F92 /* Car+CoreDataClass.swift in Sources */,
 				352762DF1C0AEF3100A3BABA /* MyCars.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
